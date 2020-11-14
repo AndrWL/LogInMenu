@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Jupiter View Controller-->
+        <scene sceneID="oH1-We-hFa">
+            <objects>
+                <viewController storyboardIdentifier="Jupiter" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TbK-US-QIh" customClass="JupiterViewController" customModule="LogInMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Sz-xI-VkK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="792bf056ae6d28052e098e659ab6158b" translatesAutoresizingMaskIntoConstraints="NO" id="vAA-Lu-PS5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkQ-8H-YnF">
+                                <rect key="frame" x="310" y="30" width="84" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Back 🛸">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToLogin" destination="Xdn-i8-elE" eventType="touchUpInside" id="CPI-mU-sIv"/>
+                                    <action selector="backToLogin" destination="TbK-US-QIh" eventType="touchUpInside" id="Dnf-sq-RhG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EI9-Bi-R5B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vAA-Lu-PS5" firstAttribute="top" secondItem="EI9-Bi-R5B" secondAttribute="top" id="GnF-9r-GPa"/>
+                            <constraint firstItem="fkQ-8H-YnF" firstAttribute="leading" secondItem="vAA-Lu-PS5" secondAttribute="trailing" constant="-104" id="Lcz-Dj-7um"/>
+                            <constraint firstItem="EI9-Bi-R5B" firstAttribute="trailing" secondItem="vAA-Lu-PS5" secondAttribute="trailing" id="Nd0-Bh-I8Y"/>
+                            <constraint firstItem="EI9-Bi-R5B" firstAttribute="bottom" secondItem="vAA-Lu-PS5" secondAttribute="bottom" id="PqT-WJ-hEp"/>
+                            <constraint firstItem="EI9-Bi-R5B" firstAttribute="trailing" secondItem="fkQ-8H-YnF" secondAttribute="trailing" constant="20" id="s3i-VC-sKc"/>
+                            <constraint firstItem="vAA-Lu-PS5" firstAttribute="leading" secondItem="EI9-Bi-R5B" secondAttribute="leading" id="v1R-gq-3N3"/>
+                            <constraint firstItem="fkQ-8H-YnF" firstAttribute="top" secondItem="EI9-Bi-R5B" secondAttribute="top" constant="30" id="wr7-GU-6YC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qZS-ZI-yZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-924" y="51.724137931034484"/>
+        </scene>
+        <!--Login Screen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LogInMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="sHU-bP-0zd">
+                                <rect key="frame" x="60" y="280" width="294" height="176"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="76j-Mf-bJf">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JMr-L5-K6P">
+                                        <rect key="frame" x="0.0" y="50" width="294" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9t6-rn-o4u">
+                                        <rect key="frame" x="0.0" y="100" width="294" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Log in"/>
+                                        <connections>
+                                            <action selector="goMars:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yoH-Az-7lb"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Wem-a1-TTA">
+                                        <rect key="frame" x="0.0" y="149" width="294" height="27"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pi-ds-ezs">
+                                                <rect key="frame" x="0.0" y="0.0" width="139.66666666666666" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Forgot User name?"/>
+                                                <connections>
+                                                    <action selector="userName" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cgc-kh-XpX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXc-EH-2UD">
+                                                <rect key="frame" x="154.66666666666663" y="0.0" width="139.33333333333337" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Forgot Paswword"/>
+                                                <connections>
+                                                    <action selector="password" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lck-NN-yle"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcom to the cosmos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7v-xx-LWa">
+                                <rect key="frame" x="30" y="40" width="354" height="26.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="x7v-xx-LWa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="DXA-T4-iZm"/>
+                            <constraint firstItem="sHU-bP-0zd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="HmA-84-Mh9"/>
+                            <constraint firstItem="x7v-xx-LWa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="QyY-7q-BBm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x7v-xx-LWa" secondAttribute="trailing" constant="30" id="SGr-KS-cOt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sHU-bP-0zd" secondAttribute="trailing" constant="60" id="c7h-aa-Q3O"/>
+                            <constraint firstItem="sHU-bP-0zd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="h9g-LU-M2i"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login Screen" id="t2f-nF-wse"/>
+                    <connections>
+                        <outlet property="UserNameTextField" destination="76j-Mf-bJf" id="WP4-yy-LgH"/>
+                        <outlet property="passwordTextField" destination="JMr-L5-K6P" id="cBI-2q-scA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="52"/>
+        </scene>
+        <!--Mars View Controller-->
+        <scene sceneID="QIk-CA-zic">
+            <objects>
+                <viewController storyboardIdentifier="Mars" id="q3H-8y-0Wh" customClass="MarsViewController" customModule="LogInMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="Xje-XF-V1L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="800px-Mars_atmosphere1" translatesAutoresizingMaskIntoConstraints="NO" id="73p-AL-1hx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqo-Iy-4xN">
+                                <rect key="frame" x="38" y="35" width="84" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Back 🛸">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToLogin" destination="q3H-8y-0Wh" eventType="touchUpInside" id="Hw5-ow-rBe"/>
+                                    <action selector="backToLogin" destination="Xdn-i8-elE" eventType="touchUpInside" id="uRh-xb-Noy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N75-xl-yYQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="73p-AL-1hx" secondAttribute="trailing" id="7bs-QR-beo"/>
+                            <constraint firstItem="73p-AL-1hx" firstAttribute="top" secondItem="N75-xl-yYQ" secondAttribute="top" id="DtC-fI-ZTq"/>
+                            <constraint firstItem="73p-AL-1hx" firstAttribute="leading" secondItem="yqo-Iy-4xN" secondAttribute="trailing" constant="-122" id="TbV-Z7-Bef"/>
+                            <constraint firstAttribute="bottom" secondItem="73p-AL-1hx" secondAttribute="bottom" id="ZaL-W4-GZA"/>
+                            <constraint firstItem="yqo-Iy-4xN" firstAttribute="top" secondItem="N75-xl-yYQ" secondAttribute="top" constant="35" id="eQR-i5-GPk"/>
+                            <constraint firstItem="yqo-Iy-4xN" firstAttribute="leading" secondItem="N75-xl-yYQ" secondAttribute="leading" constant="38" id="piu-nr-lgB"/>
+                            <constraint firstItem="73p-AL-1hx" firstAttribute="leading" secondItem="N75-xl-yYQ" secondAttribute="leading" id="tTF-8G-YKJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tk9-qJ-stC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wxq-bI-7lN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="731.78410794602701"/>
+        </scene>
+        <!--Earth View Controller-->
+        <scene sceneID="LOo-b7-Mwc">
+            <objects>
+                <viewController storyboardIdentifier="Earth" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xdn-i8-elE" customClass="EarthViewController" customModule="LogInMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8aa-7a-6bT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="800px-Earth_Eastern_Hemisphere1-e14533000763171" translatesAutoresizingMaskIntoConstraints="NO" id="VGr-mA-0Pv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rpf-gF-Puz">
+                                <rect key="frame" x="20" y="665" width="84" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Back 🛸">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToLogin" destination="Xdn-i8-elE" eventType="touchUpInside" id="wj2-lK-ghQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="09n-E0-TH2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VGr-mA-0Pv" firstAttribute="leading" secondItem="Rpf-gF-Puz" secondAttribute="trailing" constant="-104" id="1pI-DL-AnI"/>
+                            <constraint firstItem="VGr-mA-0Pv" firstAttribute="leading" secondItem="09n-E0-TH2" secondAttribute="leading" id="3RK-jf-LLN"/>
+                            <constraint firstItem="09n-E0-TH2" firstAttribute="bottom" secondItem="VGr-mA-0Pv" secondAttribute="bottom" id="8br-wg-FY1"/>
+                            <constraint firstItem="09n-E0-TH2" firstAttribute="bottom" secondItem="Rpf-gF-Puz" secondAttribute="bottom" constant="30" id="SdO-fA-qEt"/>
+                            <constraint firstItem="VGr-mA-0Pv" firstAttribute="top" secondItem="09n-E0-TH2" secondAttribute="top" id="WVe-68-InY"/>
+                            <constraint firstItem="09n-E0-TH2" firstAttribute="trailing" secondItem="VGr-mA-0Pv" secondAttribute="trailing" id="ahS-qW-Z4P"/>
+                            <constraint firstItem="Rpf-gF-Puz" firstAttribute="leading" secondItem="09n-E0-TH2" secondAttribute="leading" constant="20" id="y0f-nb-OBM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EcN-xN-jdn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844" y="51.724137931034484"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="792bf056ae6d28052e098e659ab6158b" width="1820" height="1024"/>
+        <image name="800px-Earth_Eastern_Hemisphere1-e14533000763171" width="700" height="700"/>
+        <image name="800px-Mars_atmosphere1" width="800" height="899"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
